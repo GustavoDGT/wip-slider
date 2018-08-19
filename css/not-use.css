@@ -1,0 +1,54 @@
+.slider-home:after {
+    /*pointer-events: all;*/
+    content: "\f107";
+    position: absolute;
+    bottom: 35px;
+    font: normal normal normal 4em/1 FontAwesome;
+    left: 50%;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+}
+
+.slider-home:hover:after {
+    opacity: 1;
+    -webkit-animation: myanim 1s infinite linear;
+   -moz-animation: myanim 1s infinite linear;
+     -o-animation: myanim 1s infinite linear;
+        animation: myanim 1s infinite linear;
+}
+
+@-webkit-keyframes myanim {
+  0%   { bottom: 35px }
+  50% { bottom: 45px } /* set this to the width of the image */
+  100% { bottom: 35px } 
+}
+@-moz-keyframes myanim {
+  0%   { bottom: 35px }
+  50% { bottom: 45px }  /* set this to the width of the image */
+  100% { bottom: 35px } 
+}
+@-o-keyframes myanim {
+  0%   { bottom: 35px }
+  50% { bottom: 45px } /* set this to the width of the image */
+  100% { bottom: 35px } 
+}
+@keyframes myanim {
+  0%   { bottom: 35px }
+  50% { bottom: 45px }  /* set this to the width of the image */
+  100% { bottom: 35px } 
+}
+
+.slider-home .text-caption {
+    position: absolute;
+    /*padding: 16px 15px 0px 18px;*/
+    /*background-color: rgba(51, 51, 51, .6);*/
+    text-align: center;
+}
