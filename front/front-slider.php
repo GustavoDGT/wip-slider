@@ -11,7 +11,7 @@ if( ! $detect->isMobile() ): ?>
       <div class="left-hero-tilt" <?php echo ( ! empty( $terms[0]->featured_img ) ) ? 'style="background: url(' . $img_left_attr[0] . ') no-repeat center center;"' : ''; ?>>
         <div class="side-container">
           <div class="initial active">
-            <h1 class="frase"><?php echo $terms[0]->name; ?></h1>
+            <h2 class="frase"><?php echo $terms[0]->name; ?></h2>
             <p><?php echo $terms[0]->description; ?></p>
             <span class="round-icon">+</span>
           </div>
@@ -95,7 +95,7 @@ if( ! $detect->isMobile() ): ?>
       <div class="side-container">
         <input id="tab-one" type="checkbox" name="tabs">
         <label for="tab-one" <?php echo ( ! empty( $terms[0]->featured_img ) ) ? 'style="background: url(' . $img_right_attr[0] . ') no-repeat center center;"' : ''; ?>>
-          <h1 class="frase"><?php echo $terms[0]->name; ?></h1>
+          <h2 class="frase"><?php echo $terms[0]->name; ?></h2>
           <p><?php echo $terms[0]->description; ?></p>
         </label>
         <div class="tab-content">
@@ -128,7 +128,7 @@ if( ! $detect->isMobile() ): ?>
       <div class="side-container">
         <input id="tab-two" type="checkbox" name="tabs">
         <label for="tab-two" <?php echo ( ! empty( $terms[1]->featured_img ) ) ? 'style="background: url(' . $img_right_attr[0] . ') no-repeat center center;"' : ''; ?>>
-          <h1 class="frase"><?php echo $terms[1]->name; ?></h1>
+          <h2 class="frase"><?php echo $terms[1]->name; ?></h2>
           <p><?php echo $terms[1]->description; ?></p>
         </label>
         <div class="tab-content">
