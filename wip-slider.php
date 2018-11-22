@@ -273,7 +273,8 @@ function slider_shortcode( $atts ) {
 		);
 		$queries[] = new WP_Query( $args );
 	}
-
+	ob_start();
 	include WIP_SLIDER_PATH . 'front/front-slider.php';
+	return ob_get_clean();
 }
 add_shortcode( 'WIP_SLIDER', 'slider_shortcode' );
