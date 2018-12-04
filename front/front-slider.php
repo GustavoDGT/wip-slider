@@ -94,7 +94,7 @@ if( ! $detect->isMobile() ): ?>
       <?php if( ! empty( $terms[0]->featured_img ) ) $img_right_attr = wp_get_attachment_image_src( $terms[0]->featured_img, 'full' ); ?>
       <div class="side-container">
         <input id="tab-one" type="checkbox" name="tabs">
-        <label for="tab-one" <?php echo ( ! empty( $terms[0]->featured_img ) ) ? 'style="background: url(' . $img_right_attr[0] . ') no-repeat center center;"' : ''; ?>>
+        <label class="w-100" for="tab-one" <?php echo ( ! empty( $terms[0]->featured_img ) ) ? 'style="background: url(' . $img_right_attr[0] . ') no-repeat center center;"' : ''; ?>>
           <h2 class="frase"><?php echo $terms[0]->name; ?></h2>
           <p><?php echo $terms[0]->description; ?></p>
         </label>
@@ -119,16 +119,14 @@ if( ! $detect->isMobile() ): ?>
                 <?php endwhile; ?>
               </div>
             <?php wp_reset_postdata(); endif; ?>
-            <div class="wip-40-bottom">
-              <a class="wip-btn-white" href="<?php echo $terms[1]->link_url; ?>">VER TODOS</a>
-            </div>
+            <a target="_blank" href="<?php echo $terms[0]->link_url; ?>" class="btn btn-outline-white btn-lg waves-effect mb-3">VER TODOS</a>
         </div>
       </div>
       <?php if( ! empty( $terms[1]->featured_img ) ) $img_right_attr = wp_get_attachment_image_src( $terms[1]->featured_img, 'full' ); ?>
       <div class="side-container">
         <input id="tab-two" type="checkbox" name="tabs">
-        <label for="tab-two" <?php echo ( ! empty( $terms[1]->featured_img ) ) ? 'style="background: url(' . $img_right_attr[0] . ') no-repeat center center;"' : ''; ?>>
-          <h2 class="frase"><?php echo $terms[1]->name; ?></h2>
+        <label class="w-100" for="tab-two" <?php echo ( ! empty( $terms[1]->featured_img ) ) ? 'style="background: url(' . $img_right_attr[0] . ') no-repeat center center;"' : ''; ?>>
+          <h2 class="h2"><?php echo $terms[1]->name; ?></h2>
           <p><?php echo $terms[1]->description; ?></p>
         </label>
         <div class="tab-content">
@@ -152,9 +150,7 @@ if( ! $detect->isMobile() ): ?>
                 <?php endwhile; ?>
               </div>
             <?php wp_reset_postdata(); endif; ?>
-            <div class="wip-40-bottom">
-              <a class="wip-btn-white" href="<?php echo $terms[1]->link_url; ?>">VER TODOS</a>
-            </div>
+            <a target="_blank" href="<?php echo $terms[1]->link_url; ?>" class="btn btn-outline-white btn-lg waves-effect mb-3">VER TODOS</a>
         </div>
       </div>
     </div>

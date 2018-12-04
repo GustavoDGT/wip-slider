@@ -365,6 +365,9 @@ html:not([data-device-type="mobile"]) .twin-hero .right-hero.right-hero-collapse
     .twin-hero {
       height: inherit;
     }
+    .twin-hero .hero-container h2 {
+        font-size: 25px;
+    }
     .twin-hero .hero-container .side-container {
       position: relative;
       padding: 0;
@@ -396,7 +399,7 @@ html:not([data-device-type="mobile"]) .twin-hero .right-hero.right-hero-collapse
       margin-bottom: 1vh !important;
     }
     .twin-hero .tab-content {
-      padding-top: 210px;
+      padding-top: 180px;
       max-height: 0;
       overflow: hidden;
       background: #337ab7;
@@ -456,6 +459,6 @@ html:not([data-device-type="mobile"]) .twin-hero .right-hero.right-hero-collapse
 @media only screen 
   and (max-device-width: 321px) { 
   .twin-hero .tab-content {
-    padding-top: 210px;
+    padding-top: 180px;
   }
 }
