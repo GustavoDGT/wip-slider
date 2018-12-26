@@ -41,7 +41,7 @@ if( ! $detect->isMobile() ): ?>
                 <?php endwhile; ?>
               </div>
             <?php wp_reset_postdata(); endif; ?>
-            <a target="_blank" href="<?php echo $terms[0]->link_url; ?>" class="btn btn-outline-white btn-lg waves-effect">VER TODOS</a>
+            <a href="<?php echo $terms[0]->link_url; ?>" class="btn btn-outline-white btn-lg waves-effect">VER TODOS</a>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@ if( ! $detect->isMobile() ): ?>
                 <?php endwhile; ?>
               </div>
             <?php wp_reset_postdata(); endif; ?>
-            <a target="_blank" href="<?php echo $terms[1]->link_url; ?>" class="btn btn-outline-white btn-lg waves-effect">VER TODOS</a>
+            <a href="<?php echo $terms[1]->link_url; ?>" class="btn btn-outline-white btn-lg waves-effect">VER TODOS</a>
           </div>
         </div>
       </div>
